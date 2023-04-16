@@ -19,10 +19,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
     - name: Restore dependencies
+      working-directory: ./webapi
       run: dotnet restore
     - name: Build
+      working-directory: ./webapi
       run: dotnet build --no-restore
     - name: Test
+      working-directory: ./webapi
       run: dotnet test --no-build --verbosity normal
