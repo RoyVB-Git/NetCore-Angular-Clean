@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.museumslager.moderatorapp',
-  appName: 'moderatorapp',
+  appId: 'com.yourcompany.app',
+  appName: 'yourapp',
   webDir: 'dist',
   bundledWebRuntime: false
 };
